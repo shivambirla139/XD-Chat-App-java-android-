@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1006503630316",
+    "firebase_url": "https://xd-chat-app-default-rtdb.firebaseio.com",
+    "project_id": "xd-chat-app",
+    "storage_bucket": "xd-chat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006503630316:android:faa54d33b7780e651e1cc9",
+        "android_client_info": {
+          "package_name": "com.newapps.xdchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006503630316-b05ikjaa5b03tb8s3b25lvg55o5r28mn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newapps.xdchat",
+            "certificate_hash": "1273f630e34c34aec1f9c1cd8232b9c0653259f9"
+          }
+        },
+        {
+          "client_id": "1006503630316-u3u7nf75diqbvcdcke0gucind9j8boc4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmJ4fbn5nKx9xXe-4GZEoNQ2cWGgmbsfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006503630316-u3u7nf75diqbvcdcke0gucind9j8boc4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

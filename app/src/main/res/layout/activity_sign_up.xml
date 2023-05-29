@@ -25,7 +25,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtUserame"
+            android:id="@+id/txtUsername"
             android:layout_marginTop="15dp"
             android:ems="10"
             android:inputType="textPersonName"
@@ -40,7 +40,6 @@
             android:id="@+id/txtEmail"
             android:ems="10"
             android:layout_marginTop="15dp"
-
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="9dp"
@@ -70,15 +69,14 @@
             android:layout_gravity="end"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
-            android:id="@+id/textAreadyHaveAnAccount"
+            android:id="@+id/txtAreadyHaveAnAccount"
             />
         <Button
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
             android:textColor="@color/white"
-            android:textSize="22sp"
+            android:textSize="20sp"
             android:id="@+id/btnSignUp"
             android:layout_marginTop="10dp"
             app:backgroundTint="@color/design_default_color_secondary"
