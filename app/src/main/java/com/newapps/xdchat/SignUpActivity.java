@@ -60,8 +60,11 @@ public class SignUpActivity extends AppCompatActivity {
                                 );
                                 String uid = task.getResult().getUser().getUid();
                                 database.getReference().child("Users").child(uid).setValue(user);
+                                Intent intent = new Intent(SignUpActivity.this,MainActivity.class);
 
                                 Toast.makeText(SignUpActivity.this, "Sign up successfull", Toast.LENGTH_SHORT).show();
+                                startActivity(intent);
+                                finish();
                             }else{
                                 Toast.makeText(SignUpActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
                             }
