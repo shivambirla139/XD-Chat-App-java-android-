@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
+import com.newapps.xdchat.Adapters.FragmentAdapter;
 import com.newapps.xdchat.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
-        binding.txtHello.setText(mAuth.getCurrentUser().getEmail());
+        binding.viewPager.setAdapter(new FragmentAdapter(getSupportFragmentManager()));
+        binding.tabLayout.setupWithViewPager(binding.viewPager);
     }
 
     @Override
