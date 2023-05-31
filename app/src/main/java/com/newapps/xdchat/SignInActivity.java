@@ -31,10 +31,14 @@ public class SignInActivity extends AppCompatActivity {
         binding = ActivitySignInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        getSupportActionBar().hide();
+
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
         progressDialog = new ProgressDialog(SignInActivity.this);
+        progressDialog.setTitle("Singing you In");
+        progressDialog.setMessage("wait a sec.. ");
 
         binding.btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
