@@ -38,7 +38,7 @@
             android:inputType="textLongMessage|textMultiLine"
             android:maxWidth="270dp"
             android:minWidth="50dp"
-            android:text="TextView skjnfdkjsjdiuf eer er  e re r e r e r e  s df  dfwe hiushdifuhsidfi"
+            android:text="TextVi sdfsdfsfsdfs fsdfssdfsdf  fsdfsdfsdfs fsdfsfs ew skjnfdkjsjdiuf eer er  e re r e r e r e  s df  dfwe hiushdifuhsidfi"
             android:textSize="20sp"
             app:flow_verticalBias="1.0"
             app:layout_constraintBottom_toTopOf="@id/sender_time"

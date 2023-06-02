@@ -19,7 +19,7 @@
         android:inputType="textLongMessage|textMultiLine"
         android:maxWidth="270dp"
         android:minWidth="50dp"
-        android:text="TextView skjnfdkjsjdiufhiushdifuhsidfi"
+        android:text="TextView skjnfdkjs sfsfsf fsf sf s dfsdfsfs sfsfsfsf sdf sd fsfsdf jdiufhiushdifuhsidfi"
         app:layout_constraintBottom_toTopOf="@id/receiver_time"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
