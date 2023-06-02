@@ -2,6 +2,7 @@ package com.newapps.xdchat.Adapters;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.newapps.xdchat.ChatDetailActivity;
 import com.newapps.xdchat.Models.User;
 import com.newapps.xdchat.R;
 import com.squareup.picasso.Picasso;
@@ -39,6 +41,17 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
         User user = list.get(position);
         Picasso.get().load(user.getProfilePic()).placeholder(R.drawable.avatar).into(holder.imageView);
         holder.userName.setText(user.getUserName());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(context, ChatDetailActivity.class);
+                intent.putExtra("userId",user.getUserId());
+                intent.putExtra("profilePic",user.getProfilePic());
+                intent.putExtra("userName",user.getUserName());
+                context.startActivity(intent);
+            }
+        });
 
     }
 
